@@ -8,7 +8,7 @@
 } 
 
 .container-fluid {  
-                    background-color:blue; 
+                    background-color:darkblue; 
                     background-image: url('../images/zumba/zumba1.jpg');
                     background-repeat: no-repeat;
                     background-attachment: fixed;
@@ -120,14 +120,16 @@ h5 a {
 			color: red;
 			font-size: 24px;
 			text-align: center;
-			border: 1px solid red;
+			border: 2px solid rgb(214, 15, 15);
             padding: 0px 20px 0px 20px;
 		}
 
-		#img-zu {
-			width: content;
+		#img-con {
+            background-color:darkblue;
+			width: auto;
 			margin-left: 10px;
 			border: 1px solid red;
+            padding: 2px;
 		}
 
 
