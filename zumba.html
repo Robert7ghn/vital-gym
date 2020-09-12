@@ -12,7 +12,64 @@
 	<link rel="stylesheet" href="assets/css/style2.css" type="text/css" />
 	<title>Vital-Gym</title>
 
-	<style>	
+	<style>
+		.mySlides {
+			display: block;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.slideshow-container {
+			max-width: 600px;
+			position: relative;
+			margin: auto;
+			background-color: darkblue;
+		}
+
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 20%;
+			width: auto;
+			padding: 12px;
+			margin-top: 2px;
+			color: white;
+			font-weight: bold;
+			font-size: 22px;
+			transition: 0.3s;
+			border-radius: 25px 0 0 25px;
+			user-select: none;
+		}
+
+		.next {
+			right: 0;
+			border-radius: 0 25px 25px 0;
+		}
+
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(175, 0, 15, 0.65);
+		}
+
+		.numbertext {
+			color: red;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 2px;
+		}
+
+		#join-btn {
+			margin-left: 20%;
+			background-color: rgb(0, 0, 0, 0.0);
+		}
+
+		br {
+			margin: 0;
+		}
 	</style>
 
 </head>
@@ -25,7 +82,6 @@
 				<ul>
 					<li class="active"><a href="index.html" title="Home" target="_blank">Home</a></li>
 					<li><a href="about.html" title="About" target="_blank">About</a></li>
-					<li><a href="zumba2.html" title="About" target="_blank">zum</a></li>
 					<li><a href="classes.html" title="Classes">Classes</a></li>
 					<li><a href="gallery.html" title="Gallery">Gallery</a></li>
 					<li><a href="signup.html" title="Sign-Up">Sign-Up</a></li>
@@ -34,11 +90,14 @@
 			</nav>
 		</header>
 		<section>
+
 			<div class="flex-container">
+
 				<div style="border:1px solid red;">
 					<h6 class="gen" style="text-align:center; font-weight:bold; color:fuchsia; font-size:1.5em;">Zumba
 						fun:</h6>
-			            <p>&emsp;&emsp;Este o activitate fizica de intensitate medie dar cu efecte specifice activitatilor aerobice, ce
+					<p>&emsp;&emsp;Este o activitate fizica de intensitate medie dar cu efecte specifice activitatilor
+						aerobice, ce
 						contribui diect la imbunatatirea starii generale de fitness si a metabolismului in general,
 						exercitiile efectuanduse in tr-un cadru relaxant si sub indrumarea instructorului nostru
 						specializat si dedicat atat activitatii in sine dar si a nevoilor dvs. Pentru mai multe relati
@@ -46,21 +105,51 @@
 						intermediul formularului din acest site ! </p>
 				</div>
 
-				<div>
-					<h5 style="margin-top:10px;"><a href="signup.html">Join NOW !</a></h5>
-				</div>
+				<div id="img-con">
+					<div class="slideshow-container">
 
-				<div>
-					<p id="choice">
-						We are the best choice in Town !
-					</p>
-				</div>
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="assets/images/zumba/zumba5.jpg" style="width:100%">
+						</div>
 
-				<div id="img-zu">
-					<h3>image-gallery . AAAaAA aa AAAAA aAAAAA AAA AAAA AA AAAA </h3>
-				</div>
+							<div class="mySlides">
+								<div class="numbertext">2 / 4</div>
+								<img src="assets/images/zumba/zumba1.jpg" style="width:100%">
+						</div>
 
-			</div>
+								<div class="mySlides">
+									<div class="numbertext">3 / 4</div>
+									<img src="assets/images/zumba/zumba4.jpg" style="width:100%">
+						</div>
+
+									<div class="mySlides">
+										<div class="numbertext">4 / 4</div>
+										<img src="assets/images/zumba/zumba6.jpg" style="width:100%">
+						</div>
+
+
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+									</div>
+
+								</div>
+
+								<div id="join-btn">
+									<h5 style="margin-top:10px;"><a href="signup.html">Join NOW !</a></h5>
+								</div>
+
+							</div>
+
+							<div>
+								<p id="choice">
+									We are the best choice in Town !
+								</p>
+							</div>
+							<br>
+						</div>
+
 		</section>
 
 		<footer>
@@ -107,6 +196,36 @@
 			<h4><a href="index.html" title="Home">Home</a></h4>
 		</div>
 	</div>
+
+	<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	</script>
+
 </body>
 
 </html>

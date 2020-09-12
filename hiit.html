@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +8,11 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Red+Rose&display=swap" />
+	<link rel="stylesheet" href="assets/css/style2.css" type="text/css" />
+	<title>Vital-Gym</title>
 
 	<style>
-		body {
-			background-color: blue;
-		}
-
 		.container-fluid {
 			width: 96%;
 			height: auto;
@@ -30,137 +24,180 @@
 			background-size: cover;
 		}
 
-		header {
-			position: fixed;
-			width: auto;
-			height: 130px;
-			margin-left: auto;
-			margin-right: auto;
-			background-color: rgb(120, 0, 200);
+
+		.mySlides {
+			display: block;
 		}
 
-		footer {
-			width: auto;
-			height: auto;
-			background-color: rgba(25, 25, 25, 0.7);
+		img {
+			vertical-align: middle;
 		}
 
-		pre {
-			background-color: rgba(25, 25, 25, 0.5);
-			color: red;
-			font-size: 24px;
-			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		.slideshow-container {
+			max-width: 600px;
+			position: relative;
+			margin: auto;
+			background-color: darkblue;
+		}
+
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 20%;
+			width: auto;
+			padding: 8px;
+			margin: 6px;
+			color: white;
 			font-weight: bold;
-			width: 160px;
-			height: auto;
-
-			margin-top: 120px;
-			padding-right: 20px;
-			text-align: center;
-			border-top: 1px solid red;
-			border-left: 1px solid red;
+			font-size: 18px;
+			transition: 0.3s;
+			border-radius: 25px 0 0 25px;
 		}
 
-		h5 {
-			width: 100%;
-			margin-left: 8px;
+		.next {
+			right: 0;
+			border-radius: 0 25px 25px 0;
 		}
 
-		h5 :hover {
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(175, 0, 15, 0.65);
+		}
+
+		.numbertext {
 			color: red;
-			font-style: italic;
-			background-color: lightskyblue;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 2px;
+		}
+
+		#join-btn {
+			margin-left: 20%;
+			background-color: rgb(0, 0, 0, 0.0);
+		}
+
+		br {
+			margin: 0;
 		}
 	</style>
 
-
-
-	<title>Vital-Gym</title>
 </head>
 
 <body>
 	<div class="container-fluid">
 		<header>
-			<h1>Vital-Gym</h1>
+			<h1> Vital-Gym</h1>
 			<nav>
 				<ul>
-					<li><a href="index.html" title="Home">Home</a></li>
-					<li><a href="about.html" title="About">About</a></li>
+					<li class="active"><a href="index.html" title="Home" target="_blank">Home</a></li>
+					<li><a href="about.html" title="About" target="_blank">About</a></li>
 					<li><a href="classes.html" title="Classes">Classes</a></li>
 					<li><a href="gallery.html" title="Gallery">Gallery</a></li>
 					<li><a href="signup.html" title="Sign-Up">Sign-Up</a></li>
-					<li><a href="contact.html" title="Contact">Contact</a></li>
+					<li><a href="contact.html" title="Contact" target="_blank">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<br>
+		<section>
 
-		<pre>
+			<div class="flex-container">
 
-    w
-    E
+				<div style="border:1px solid red;">
+					<h6 class="gen" style="text-align:center; font-weight:bold; color:blue; font-size:1.5em;">High
+						Intensity Interval Training</h6>
+					<p>&emsp;&emsp;Este o activitate fizica de intensitate medie dar cu efecte specifice activitatilor
+						aerobice, ce
+						contribui diect la imbunatatirea starii generale de fitness si a metabolismului in general,
+						exercitiile efectuanduse in tr-un cadru relaxant si sub indrumarea instructorului nostru
+						specializat si dedicat atat activitatii in sine dar si a nevoilor dvs. Pentru mai multe relati
+						nu ezitati sa ne contactati sau sa solicitati inscrierea automata la o sedinta gratuita, prin
+						intermediul formularului din acest site ! </p>
+				</div>
 
-    A
-    R
-    E
+				<div id="img-con" style="border:2px solid blue;">
+					<div class="slideshow-container">
 
-    T
-    H
-    E
+						<div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="assets/images/hiit/hiit1.jpg" style="width:100%;">
+						</div>
 
-    B
-    E
-    S
-    T
+							<div class="mySlides">
+								<div class="numbertext">2 / 6</div>
+								<img src="assets/images/hiit/hiit5ro.jpg" style="width:100%">
+						</div>
 
-    C
-    H
-    O
-    I
-    C
-    E
+								<div class="mySlides">
+									<div class="numbertext">3 / 6</div>
+									<img src="assets/images/hiit/hiit6w.jpg" style="width:100%">
+						</div>
 
-    I
-    N
+									<div class="mySlides">
+										<div class="numbertext">4 / 6</div>
+										<img src="assets/images/hiit/hiit7gr.jpg" style="width:100%">
+						</div>
 
-    T
-    O
-    W
-    N
- <h5><a href="signup.html">Join NOW !</a></h5>
- </pre>
+										<div class="mySlides">
+											<div class="numbertext">5 / 6</div>
+											<img src="assets/images/hiit/monster1.jpg" style="width:100%">
+						</div>
+
+											<div class="mySlides">
+												<div class="numbertext">6 / 6</div>
+												<img src="assets/images/hiit/hiit9z.jpg" style="width:100%">
+						</div>
+
+													<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+													<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+												</div>
+
+											</div>
+
+											<div id="join-btn">
+												<h5 style="margin-top:10px;"><a href="signup.html">Join NOW !</a></h5>
+											</div>
+
+										</div>
+									</div>
+
+		</section>
+
 		<footer>
 			<div class="row">
-				<div class="col-6 border">
-					<h6 class="general-sub">Address:</h6>
+				<div class="col-6" style="border-right:1px solid red;">
+					<h6 class="gen">Address:</h6>
 					<p>8 Almond road, London, E16 4VU</p>
-					<h6 class="general-sub">Phone:</h6>
+					<h6 class="gen">Phone:</h6>
 					<p>+44 0(2) 456 8798</p>
-					<h6 class="general-sub">E-mail:</h6>
+					<h6 class="gen">E-mail:</h6>
 					<p>office@vital-gym.com</p>
 				</div>
 
-				<div class="col-6 border">
-					<h6 class="general-sub">Social Links</h6>
+				<div class="col-6" style="text-align:left;">
+					<h6 class="gen">Social Links</h6>
 					<ul class="list-inline">
 
 						<li class="list-inline-item">
 							<a target="_blank" href="#">
-								<i class="fab fa-facebook" aria-hidden="true"></i>
+								<i class="fab fa-facebook"></i>
 								<span>Facebook</span>
 							</a>
 						</li>
 
 						<li class="list-inline-item">
 							<a target="_blank" href="#">
-								<i class="fab fa-twitter" aria-hidden="true"></i>
+								<i class="fab fa-twitter"></i>
 								<span>Twitter</span>
 							</a>
 						</li>
 
 						<li class="list-inline-item">
 							<a target="_blank" href="#">
-								<i class="fab fa-instagram" aria-hidden="true"></i>
+								<i class="fab fa-instagram"></i>
 								<span>Instagram</span>
 							</a>
 						</li>
@@ -169,12 +206,39 @@
 				</div>
 			</div>
 		</footer>
-
 		<div class="rh">
 			<h4><a href="index.html" title="Home">Home</a></h4>
 		</div>
-
 	</div>
+
+	<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	</script>
 
 </body>
 

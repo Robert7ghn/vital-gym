@@ -1,36 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style> 
-div {
-  width: 100px;
-  height: 100px;
-  background: white;
-  border:1px solid red;
-  border-radius:50%;
-  position: relative;
-  animation: myfirst 7s infinite;
-  animation-direction: normal;
-}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-@keyframes myfirst {
-   0% {background: red; left: 20px; top: 0px;}
-   15%  {background: rgba(255,5,25, 0.3); left: 300px; top: 40px;}
-  30%  {background: yellow; left: 600px; top: 5px;}
-  50%  {background: rgba(0,0,225, 0.6); left: 300px; top: 180px;}
-  70%  {background: rgba(0,245,0, 0.3); left: 400px; top: 260px;}
-  85%  {background: rgba(33,33,33, 0.5); left: 160px; top: 340px;}
-100% {background: rgba(225,0,0, 0.3);; left: 20px; top: 0px;}
-}
-</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Red+Rose&display=swap" />
+	<link rel="stylesheet" href="assets/css/style2.css" type="text/css" />
+	<title>Vital-Gym</title>
+
+	<style>
+		.container-fluid {
+			width: 96%;
+			height: auto;
+			background-color: blue;
+			background-image: url("assets/images/nutrition/field-g.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: top center;
+			background-size: cover;
+		}
+
+		#choice {
+			width: auto;
+			margin-left: 14px;
+			margin-right: 12px;
+			color: yellow;
+			background-color: rgba(215, 11, 35, 0.7);
+		}
+
+		#img-con {
+			border: 2px solid white;
+			padding: 4px;
+		}
+
+		.mySlides {
+			display: block;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.slideshow-container {
+			max-width: 500px;
+			position: relative;
+			margin: auto;
+			background-color: darkblue;
+		}
+
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 20%;
+			width: auto;
+			padding: 12px;
+			margin-top: 2px;
+			color: yellow;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.3s;
+			border-radius: 25px 0 0 25px;
+		}
+
+		.next {
+			right: 4px;
+			border-radius: 0 25px 25px 0;
+		}
+
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(175, 222, 15, 0.65);
+		}
+
+		.numbertext {
+			color: red;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 2px;
+		}
+
+		#join-btn {
+			margin: auto;
+			background-color: rgb(0, 0, 0, 0.0);
+		}
+	</style>
+
 </head>
+
 <body>
+	<div class="container-fluid">
+		<header>
+			<h1> Vital-Gym</h1>
+			<nav>
+				<ul>
+					<li class="active"><a href="index.html" title="Home" target="_blank">Home</a></li>
+					<li><a href="about.html" title="About" target="_blank">About</a></li>
+					<li><a href="classes.html" title="Classes">Classes</a></li>
+					<li><a href="gallery.html" title="Gallery">Gallery</a></li>
+					<li><a href="signup.html" title="Sign-Up">Sign-Up</a></li>
+					<li><a href="contact.html" title="Contact" target="_blank">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
 
-<h1>The animation-direction Property</h1>
+			<div class="flex-container">
 
-<p>Play the animation forwards first, then backwards:</p>
-<div></div>
-<p><strong>Note:</strong> The animation-direction property is not supported in Internet Explorer 9 and earlier versions.</p>
+				<div style="border:1px solid red;">
+					<h6 class="gen" style="text-align:center; font-weight:bold; color:yellow; font-size:1.5em;">
+						Nutrition</h6>
+					<p style="color:ivory;">&emsp;&emsp;Este o activitate fizica de intensitate medie dar cu efecte
+						specifice activitatilor
+						aerobice, ce
+						contribui diect la imbunatatirea starii generale de fitness si a metabolismului in general,
+						exercitiile efectuanduse in tr-un cadru relaxant si sub indrumarea instructorului nostru
+						specializat si dedicat atat activitatii in sine dar si a nevoilor dvs. Pentru mai multe relati
+						nu ezitati sa ne contactati sau sa solicitati inscrierea automata la o sedinta gratuita, prin
+						intermediul formularului din acest site ! </p>
+				</div>
+				<div id="join-btn">
+					<h5 style="margin:10px;">
+						<a href="signup.html">Join
+							NOW
+							!</a>
+					</h5>
+				</div>
+
+				<div id="img-con">
+					<div class="slideshow-container">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 20</div>
+							<img src="assets/images/nutrition/apetit.jpg" style="width:100%">
+						</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 20</div>
+								<img src="assets/images/nutrition/apple.png" style="width:100%">
+						</div>
+
+								<div class="mySlides">
+									<div class="numbertext">3 / 20</div>
+									<img src="assets/images/nutrition/avocado.jpg" style="width:100%">
+						</div>
+
+									<div class="mySlides">
+										<div class="numbertext">4 / 20</div>
+										<img src="assets/images/nutrition/berries.jpg" style="width:100%">
+						</div>
+
+										<div class="mySlides">
+											<div class="numbertext">5 / 20</div>
+											<img src="assets/images/nutrition/blueberries.jpg" style="width:100%">
+						</div>
+
+											<div class="mySlides">
+												<div class="numbertext">6 / 20</div>
+												<img src="assets/images/nutrition/breakfast.jpg" style="width:100%">
+						</div>
+
+												<div class="mySlides">
+													<div class="numbertext">7 / 20</div>
+													<img src="assets/images/nutrition/cereal-bo.jpg" style="width:100%">
+						</div>
+
+													<div class="mySlides">
+														<div class="numbertext">8 / 20</div>
+														<img src="assets/images/nutrition/currants.jpg" style="width:100%">
+						</div>
+
+														<div class="mySlides">
+															<div class="numbertext">9 / 20</div>
+															<img src="assets/images/nutrition/eat-splash.jpg" style="width:100%">
+						</div>
+
+															<div class="mySlides">
+																<div class="numbertext">10 / 20</div>
+																<img src="assets/images/nutrition/field-g.jpg" style="width:100%">
+						</div>
+
+																<div class="mySlides">
+																	<div class="numbertext">11 / 20</div>
+																	<img src="assets/images/nutrition/foods.jpg" style="width:100%">
+						</div>
+
+																	<div class="mySlides">
+																		<div class="numbertext">12 / 20</div>
+																		<img src="assets/images/nutrition/berries.jpg" style="width:100%">
+						</div>
+
+																		<div class="mySlides">
+																			<div class="numbertext">13 / 20</div>
+																			<img src="assets/images/nutrition/fruits-h.jpg" style="width:100%">
+						</div>
+
+																			<div class="mySlides">
+																				<div class="numbertext">14 / 20</div>
+																				<img src="assets/images/nutrition/eat-splash.jpg" style="width:100%">
+						</div>
+
+																				<div class="mySlides">
+																					<div class="numbertext">15 / 20
+																					</div>
+																					<img src="assets/images/nutrition/hazelnuts.jpg" style="width:100%">
+						</div>
+
+																					<div class="mySlides">
+																						<div class="numbertext">16 / 20
+																						</div>
+																						<img src="assets/images/nutrition/hydra.png" style="width:100%">
+						</div>
+
+																						<div class="mySlides">
+																							<div class="numbertext">17 /
+																								20</div>
+																							<img src="assets/images/nutrition/oranges.jpg" style="width:100%">
+						</div>
+
+																							<div class="mySlides">
+																								<div class="numbertext">
+																									18 / 20</div>
+																								<img src="assets/images/nutrition/tape2.jpg" style="width:100%">
+						</div>
+
+																								<div class="mySlides">
+																									<div
+																										class="numbertext">
+																										19 / 20</div>
+																									<img src="assets/images/nutrition/tape5.jpg" style="width:100%">
+						</div>
+
+																									<div
+																										class="mySlides">
+																										<div
+																											class="numbertext">
+																											20 / 20
+																										</div>
+																										<img src="assets/images/nutrition/brocoli.jpg" style="width:100%">
+						</div>
+
+																										<a class="prev"
+																											onclick="plusSlides(-1)">&#10094;</a>
+																										<a class="next"
+																											onclick="plusSlides(1)">&#10095;</a>
+
+																									</div>
+
+																								</div>
+
+
+
+																							</div>
+
+																							<br>
+
+																							<div>
+																								<p id="choice">
+																									"Hydration is equal
+																									important as
+																									breathing
+																									!"
+																								</p>
+																							</div>
+																							<br>
+						</div>
+
+		</section>
+
+		<footer>
+			<div class="row">
+				<div class="col-6" style="border-right:1px solid red;">
+					<h6 class="gen">Address:</h6>
+					<p>8 Almond road, London, E16 4VU</p>
+					<h6 class="gen">Phone:</h6>
+					<p>+44 0(2) 456 8798</p>
+					<h6 class="gen">E-mail:</h6>
+					<p>office@vital-gym.com</p>
+				</div>
+
+				<div class="col-6" style="text-align:left;">
+					<h6 class="gen">Social Links</h6>
+					<ul class="list-inline">
+
+						<li class="list-inline-item">
+							<a target="_blank" href="#">
+								<i class="fab fa-facebook"></i>
+								<span>Facebook</span>
+							</a>
+						</li>
+
+						<li class="list-inline-item">
+							<a target="_blank" href="#">
+								<i class="fab fa-twitter"></i>
+								<span>Twitter</span>
+							</a>
+						</li>
+
+						<li class="list-inline-item">
+							<a target="_blank" href="#">
+								<i class="fab fa-instagram"></i>
+								<span>Instagram</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<div class="rh">
+			<h4><a href="index.html" title="Home">Home</a></h4>
+		</div>
+	</div>
+
+	<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	</script>
 
 </body>
+
 </html>
