@@ -52,7 +52,7 @@ The project also provides direct links between the sections.
 ---
 
 ## Demo
-A live demo can be found at: *(https://github.com/Robert7IoS/Vital-Gym)*
+A live demo can be found at: *( https://robert7ghn.github.io/vital-gym/ )*
 
 ---
 
@@ -67,7 +67,7 @@ The live site is deployed on GitHub pages.
 
 It uses the master branch: 
 
-*[Github] (https://github.com/Robert7IoS/Vital-Gym)*
+*[Github] ( https://robert7ghn.github.io/vital-gym/ )*
 
 ---
 
