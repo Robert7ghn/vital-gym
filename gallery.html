@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,9 +14,9 @@
 	<title>Vital-Gym</title>
 
 	<style>
-		.container-h {
-			padding-top: 130px;
-			background-color: darkblue;
+		.container-fluid {
+			padding-top: 140px;
+			background-image: none;
 		}
 
 		div.gallery {
@@ -37,17 +38,24 @@
 			width: 25%;
 		}
 
-@media only screen and (max-width: 620px;){
-    .responsive {
-            width:50%;
-            margin:6px 0;
-    }
-}
-		
-@media only screen and (max-width: 320px) {
+		@media only screen and (max-width: 620px) {
+			.responsive {
+				width: 50%;
+				margin: 4px 0px;
+			}
+		}
+
+		@media only screen and (max-width: 320px) {
 			.responsive {
 				width: 100%;
+				margin: 2px 2px;
 			}
+		}
+
+		#join {
+			margin-top: 10px;
+			background-color: grey;
+			text-align: center;
 		}
 	</style>
 
@@ -68,111 +76,225 @@
 		</nav>
 	</header>
 
-	<div class="container-h">
+	<div class="container-fluid">
 		<h5 style="text-align:center; color:orange;">Image Gallery</h5>
-	</div>
 
-	<div class="responsive">
-		<div class="gallery"><img src="assets/images/vip/abs.jpg" alt="Gym-Image" width="600" height="400"></div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/win.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/win.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
 		</div>
 
 		<div class="responsive">
-			<div class="gallery">
-				<img src="assets/images/gallery/win.jpg" alt="Gym-Image" width="600" height="400"></div>
-			</div>
+			<a target="_blank" href="assets/images/nutrition/tape2.jpg">
+				<div class="gallery">
+					<img src="assets/images/nutrition/tape2.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-			<div class="responsive">
+		<div class="responsive">
+			<a target="_blank" href="assets/images/zumba/zumba1.jpg">
 				<div class="gallery">
 					<img src="assets/images/zumba/zumba1.jpg" alt="Gym-Image" width="600" height="400"></div>
-				</div>
+			</a>
+		</div>
 
-				<div class="responsive">
-					<div class="gallery">
-						<img src="assets/images/zumba/zumba4.jpg" alt="Gym-Image" width="600" height="400"></div>
-					</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/zumba/zumba4.jpg">
+				<div class="gallery">
+					<img src="assets/images/zumba/zumba4.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-					<div class="responsive">
-						<div class="gallery">
-							<img src="assets/images/zumba/zumba5.jpg" alt="Gym-Image" width="600" height="400"></div>
-						</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/zumba/zumba5.jpg">
+				<div class="gallery">
+					<img src="assets/images/zumba/zumba5.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-						<div class="responsive">
-							<div class="gallery">
-								<img src="assets/images/zumba/zumba6.jpg" alt="Gym-Image" width="600" height="400"></div>
-							</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/vip/abs.jpg">
+				<div class="gallery">
+					<img src="assets/images/vip/abs.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-							<div class="responsive">
-								<div class="gallery">
-									<img src="assets/images/hiit/musclem.jpg" alt="Gym-Image" width="600" height="400"></div>
-								</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/zumba/zumba6.jpg">
+				<div class="gallery">
+					<img src="assets/images/zumba/zumba6.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-								<div class="responsive">
-									<div class="gallery">
-										<img src="assets/images/hiit/monster1.jpg" alt="Gym-Image" width="600" height="400"></div>
-									</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/hiit/monster1.jpg">
+				<div class="gallery">
+					<img src="assets/images/hiit/monster1.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-									<div class="responsive">
-										<div class="gallery">
-											<img src="assets/images/hiit/dbell.png" alt="Gym-Image" width="600" height="400"></div>
-										</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/stretch/stre.jpg">
+				<div class="gallery">
+					<img src="assets/images/stretch/stre.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-										<div class="responsive">
-											<div class="gallery">
-												<img src="assets/images/stretch/stre.jpg" alt="Gym-Image" width="600" height="400"></div>
-											</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/hiit/musclem.jpg">
+				<div class="gallery">
+					<img src="assets/images/hiit/musclem.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-											<div class="responsive">
-												<div class="gallery">
-													<img src="assets/images/stretch/stre2.jpg" alt="Gym-Image" width="600" height="400"></div>
-												</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/stretch/stre2.jpg">
+				<div class="gallery">
+					<img src="assets/images/stretch/stre2.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-												<div class="responsive">
-													<div class="gallery">
-														<img src="assets/images/nutrition/tape2.jpg" alt="Gym-Image" width="600" height="400"></div>
-													</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/nutrition/apetit.jpg">
+				<div class="gallery">
+					<img src="assets/images/nutrition/apetit.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-													<div class="responsive">
-														<div class="gallery">
-															<img src="assets/images/nutrition/apetit.jpg" alt="Gym-Image" width="600" height="400"></div>
-														</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/yoga/yasana.jpg">
+				<div class="gallery">
+					<img src="assets/images/yoga/yasana.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-														<div class="responsive">
-															<div class="gallery">
-																<img src="assets/images/yoga/yasana.jpg" alt="Gym-Image" width="600" height="400"></div>
-															</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/yoga/yposture1.jpg">
+				<div class="gallery">
+					<img src="assets/images/yoga/yposture1.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-															<div class="responsive">
-																<div class="gallery">
-																	<img src="assets/images/yoga/y-postures.png" alt="Gym-Image" width="600" height="400"></div>
-																</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/yoga/yposture2.jpg">
+				<div class="gallery">
+					<img src="assets/images/yoga/yposture2.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-																<div class="responsive">
-																	<div class="gallery">
-																		<img src="assets/images/yoga/yposture1.jpg" alt="Gym-Image" width="600" height="400"></div>
-																	</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/yoga/yogabakroot.jpg">
+				<div class="gallery">
+					<img src="assets/images/yoga/yogabakroot.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-																	<div class="responsive">
-																		<div class="gallery">
-																			<img src="assets/images/yoga/yposture2.jpg" alt="Gym-Image" width="600" height="400"></div>
-																		</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/nutrition/tape5.jpg">
+				<div class="gallery">
+					<img src="assets/images/nutrition/tape5.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-																		<div class="responsive">
-																			<div class="gallery">
-																				<img src="assets/images/yoga/yogabakroot.jpg" alt="Gym-Image" width="600" height="400"></div>
-																			</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/hiit/hiit1.jpg">
+				<div class="gallery">
+					<img src="assets/images/hiit/hiit1.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-																			<div class="responsive">
-																				<div class="gallery">
-																					<img src="assets/images/nutrition/tape5.jpg" alt="Gym-Image" width="600" height="400"></div>
-																				</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/a-girl.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/a-girl.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
-																				<div class="responsive">
-																					<div class="gallery">
-																						<img src="assets/images/hiit/hiit1.jpg" alt="Gym-Image" width="600" height="400"></div>
-																					</div>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/ana.png">
+				<div class="gallery">
+					<img src="assets/images/gallery/ana.png" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/ball.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/ball.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/gkiss.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/gkiss.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/dbell.png">
+				<div class="gallery">
+					<img src="assets/images/gallery/dbell.png" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/lift-g.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/lift-g.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/ropes2es.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/ropes2es.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/sarah-c.png">
+				<div class="gallery">
+					<img src="assets/images/gallery/sarah-c.png" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
 
 
-																					<footer> Join Today !</footer>
+		<div class="responsive">
+			<a target="_blank" href="assets/images/yoga/y-postures.png">
+				<div class="gallery">
+					<img src="assets/images/yoga/y-postures.png" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/gym-b.png">
+				<div class="gallery">
+					<img src="assets/images/gallery/gym-b.png" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/fitness-board.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/fitness-board.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive">
+			<a target="_blank" href="assets/images/gallery/waist.jpg">
+				<div class="gallery">
+					<img src="assets/images/gallery/waist.jpg" alt="Gym-Image" width="600" height="400"></div>
+			</a>
+		</div>
+
+		<div class="responsive" style="width:100%; background-color:brown; padding:20px 0px; text-align:center; ">
+				<h5><a href="signup.html">Join NOW !</a></h5>
+		</div>
+
+	</div>
 
 </body>
 
