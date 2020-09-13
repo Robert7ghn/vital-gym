@@ -26,8 +26,8 @@
 		.container-fluid {
 			width: 94%;
 			height: auto;
-            margin-top:10px;
-            padding-top:10px;
+			margin-top: 4px;
+			padding-bottom: 8px;
 			background-color: blue;
 			background-image: url("assets/images/gallery/win.jpg");
 			background-repeat: no-repeat;
@@ -35,21 +35,36 @@
 			background-position: center;
 		}
 
-		footer div .row {
-			height: 20%;
-			background-color: lightblue;
-			color: rgba(2, 0, 90, 0.973);
+		.HBTN {
+			text-align: center;
+			background-color: rgba(15, 0, 195, 0.7);
+			padding: 4px;
 		}
-h3{ color:red;}
+
+
+		h3 {
+			color: cyan;
+		}
+
+		h4 {
+			padding: 8px;
+			background-color: ;
+		}
+
+		h4 a {
+			color: lime;
+			background-color: navy;
+			font-weight: bold;
+			border: 1px solid yellow;
+			border-radius: 22px;
+			padding-left: 48px;
+			padding-right: 48px;
+			padding-bottom: 6px;
+		}
 
 		h4 a:hover {
 			text-decoration: none;
 			color: red;
-			font-style: italic;
-		}
-
-		h4 {
-			background-color: darkblue;
 		}
 	</style>
 
@@ -62,29 +77,28 @@ h3{ color:red;}
 		<section class="container-fluid">
 			<div class="row bg-color-contact">
 				<div class="col">
-                <h3 class="text-center" style="color:rgba(252,222,55, 0.9);">Vital-Gym</h3>
+					<h3 class="text-center" style="color:red;">Vital-Gym</h3>
 					<h3 class="contact-heading text-center">Registration Form</h3>
-					<h5 style="color:yellow" ; class="text-center">First month free !</h5>
+					<h5 style="color:white" ; class="text-center">First month free !</h5>
 					<div class="center-form">
-						<form>
+						<form style="background-color:rgba(255,255,0,0.1)">
 							<label for="fname" style="color:red"><strong>First Name:</strong></label>
-							<input type="text" name="fname" id="fname" class="form-control" required />
+							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="fname" id="fname" class="form-control" required />
 							<label for="lname" style="color:red"><strong>Last Name:</strong></label>
-							<input type="text" name="lname" id="lname" class="form-control" required />
+							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="lname" id="lname" class="form-control" required />
 							<label for="email" style="color:red"><strong>Email address:</strong></label>
-							<input type="email" name="email" id="email" class="form-control" placeholder="Email:" required />
-							<input type="text" name="address" id="address" class="form-control" placeholder="Address:" required />
-							<input type="text" name="b-date" id="b-date" class="form-control" placeholder="Date of birth:" required />
-							<input type="text" name="phone" id="phone" class="form-control" placeholder="Phone:" required />
+							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="email" name="email" id="email" class="form-control" placeholder="Email:" required />
+							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="address" id="address" class="form-control" placeholder="Address:" required />
+							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="b-date" id="b-date" class="form-control" placeholder="Date of birth:" required />
+							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="phone" id="phone" class="form-control" placeholder="Phone:" required />
 
 							<div class="form-row text-center">
 								<div class="col">
 									<br>
-									<button type="submit" class="btn btn-warning">Join <em>Now !</em></button>
-                                    <br>
-                                    <br>
+									<button type="submit" class="btn btn-warning"style="color:red;background-color:white; font-weight:bolder">Join <em>Now !</em></button>
+									<br>
 								</div>
-							</div>
+								</div>
 						</form>
 					</div>
 				</div>
@@ -92,49 +106,8 @@ h3{ color:red;}
 		</section>
 
 		<footer>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-6 border">
-						<h6>Address:</h6>
-						<p>8 Almond road, London, E16 4VU</p>
-                        <h6>Phone:</h6>
-                       <p>+44 0(2) 456 8798</p>
-                        <h6>E-mail:</h6>
-                       <p>office@vital-gym.com</p>
-					</div>
-
-					<div class="col-6 border">
-						<h6 class="general-sub">Social Links</h6>
-						<ul class="list-inline">
-
-							<li class="list-inline-item">
-								<a target="_blank" href="#">
-									<i class="fab fa-facebook" aria-hidden="true"></i>
-									<span>Facebook</span>
-								</a>
-							</li>
-
-							<li class="list-inline-item">
-								<a target="_blank" href="#">
-									<i class="fab fa-twitter" aria-hidden="true"></i>
-									<span>Twitter</span>
-								</a>
-							</li>
-
-							<li class="list-inline-item">
-								<a target="_blank" href="#">
-									<i class="fab fa-instagram" aria-hidden="true"></i>
-									<span>Instagram</span>
-								</a>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-				<div class="rh">
-					<h4><a href="index.html" title="Home">Home</a></h4>
-				</div>
-
+			<div class="HBTN">
+				<h4><a href="index.html" title="Home">Home</a></h4>
 			</div>
 		</footer>
 	</div>
