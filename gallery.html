@@ -13,9 +13,62 @@
 	<title>Vital-Gym</title>
 
 	<style>
+		body {
+			background-color: midnightblue;
+		}
+
+
 		.container-fluid {
 			padding-top: 140px;
+			background-color: midnightblue;
 			background-image: none;
+		}
+
+
+		/* NAV */
+
+		nav {
+			width: auto;
+			height: 70%;
+			align-content: center;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin-right: 10px;
+		}
+
+
+		nav ul li {
+			display: inline-block;
+			text-align: center;
+			width: 90px;
+			height: 32px;
+			margin-top: 4px;
+			margin-right: 4px;
+			border: 1px solid red;
+			border-top-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+			padding: 4px;
+			font-weight: bold;
+			background-color: rgb(255, 189, 222);
+		}
+
+		nav ul li a {
+			text-align: center;
+			color: blue;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-style: bold;
+		}
+
+		nav ul li a:hover {
+			text-decoration: none;
+			color: rgb(250, 18, 68);
+			font-style: italic;
+		}
+
+		.active {
+			background-color: rgb(252, 122, 90);
 		}
 
 		div.gallery {
@@ -224,14 +277,14 @@
 			</a>
 		</div>
 
-        <div class="responsive">
+		<div class="responsive">
 			<a target="_blank" href="assets/images/gallery/weight-l.jpg">
 				<div class="gallery">
 					<img src="assets/images/gallery/weight-l.jpg" alt="Gym-Image" width="600" height="400"></div>
 			</a>
 		</div>
 
-        <div class="responsive">
+		<div class="responsive">
 			<a target="_blank" href="assets/images/zumba/zumba6.jpg">
 				<div class="gallery">
 					<img src="assets/images/zumba/zumba6.jpg" alt="Gym-Image" width="600" height="400"></div>
