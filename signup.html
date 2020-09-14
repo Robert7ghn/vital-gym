@@ -20,30 +20,50 @@
 	<style>
 		body {
 
-			background-color: blue;
+			background-color: black;
 		}
 
 		.container-fluid {
-			width: 94%;
+			width: 98%;
 			height: auto;
-			margin-top: 4px;
-			padding-bottom: 8px;
-			background-color: blue;
+			margin-top: 1px;
+			margin-bottom: 1px;
+			background-color: darkblue;
 			background-image: url("assets/images/gallery/win.jpg");
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-position: center;
 		}
 
-		.HBTN {
-			text-align: center;
-			background-color: rgba(15, 0, 195, 0.7);
-			padding: 4px;
+		form {
+			letter-spacing: ;
+			line-height: 16px;
 		}
 
+		.HBTN {
+			text-align: right;
+
+		}
+
+		button {
+			color: cyan;
+			background-color: blue;
+			padding: 6px 30px;
+			border-radius: 20px;
+			border-style: 1px solid green;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		button:hover {
+			color: red;
+			background-color: white;
+		}
 
 		h3 {
-			color: cyan;
+			color: blue;
+			font-family: arial;
+			letter-spacing: 5px;
 		}
 
 		h4 {
@@ -52,19 +72,21 @@
 		}
 
 		h4 a {
-			color: lime;
-			background-color: navy;
-			font-weight: bold;
-			border: 1px solid yellow;
-			border-radius: 22px;
-			padding-left: 48px;
-			padding-right: 48px;
-			padding-bottom: 6px;
+			color: red;
+
 		}
 
 		h4 a:hover {
 			text-decoration: none;
-			color: red;
+			color: cyan;
+		}
+
+		h5 {
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 22px;
+			letter-spacing: 2px;
+			font-weight: none;
+			font-style: italic;
 		}
 	</style>
 
@@ -73,38 +95,35 @@
 
 <body>
 	<div class="container-fluid">
-
-		<section class="container-fluid">
-			<div class="row bg-color-contact">
-				<div class="col">
-					<h3 class="text-center" style="color:red;">Vital-Gym</h3>
-					<h3 class="contact-heading text-center">Registration Form</h3>
-					<h5 style="color:white" ; class="text-center">First month free !</h5>
-					<div class="center-form">
-						<form style="background-color:rgba(255,255,0,0.1)">
-							<label for="fname" style="color:red"><strong>First Name:</strong></label>
-							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="fname" id="fname" class="form-control" required />
-							<label for="lname" style="color:red"><strong>Last Name:</strong></label>
-							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="lname" id="lname" class="form-control" required />
-							<label for="email" style="color:red"><strong>Email address:</strong></label>
-							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="email" name="email" id="email" class="form-control" placeholder="Email:" required />
-							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="address" id="address" class="form-control" placeholder="Address:" required />
-							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="b-date" id="b-date" class="form-control" placeholder="Date of birth:" required />
-							<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="phone" id="phone" class="form-control" placeholder="Phone:" required />
-
-							<div class="form-row text-center">
-								<div class="col">
-									<br>
-									<button type="submit" class="btn btn-warning"style="color:red;background-color:white; font-weight:bolder">Join <em>Now !</em></button>
-									<br>
-								</div>
-								</div>
-						</form>
-					</div>
+		<div class="row bg-color-contact">
+			<div class="col">
+				<h2 class="text-center"
+					style="color:#ff0035; font-style:italic; font-family:Times; font-weight:bold; letter-spacing:6px;">
+					Vital-Gym</h2>
+				<h3 class="contact-heading text-center">Registration Form</h3>
+				<h5 style="color:white" ; class="text-center">First month free !</h5>
+				<div class="center-form">
+					<form style="background-color:rgba(255,255,0,0.1)">
+						<label for="fname" style="color:red"><strong>First Name:</strong></label>
+						<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="fname" id="fname" class="form-control" required />
+						<label for="lname" style="color:red"><strong>Last Name:</strong></label>
+						<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="lname" id="lname" class="form-control" required />
+						<label for="lname" style="color:red"><strong>Date of Birth:</strong></label>
+						<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="b-date" id="b-date" class="form-control" required />
+						<br>
+						<label for="email" style="color:red"><strong>Contact Details:</strong></label>
+						<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="phone" id="phone" class="form-control" placeholder="Phone:" required />
+						<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="email" name="email" id="email" class="form-control" placeholder="Email:" required />
+						<input style="color:white; background-color:rgba(00,255,255, 0.3)" type="text" name="address" id="address" class="form-control" placeholder="Address:" required />
+						<div class="form-row text-center">
+							<div class="col">
+								<button type="submit"><em>SEND<em></button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
-		</section>
-
+		</div>
 		<footer>
 			<div class="HBTN">
 				<h4><a href="index.html" title="Home">Home</a></h4>
