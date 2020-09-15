@@ -4,7 +4,7 @@
 header {
         position: fixed;
         width:100%;
-        height: 130px;
+        height: 120px;
         margin-left: auto;
         margin-right: auto;
         right: 0;
@@ -15,11 +15,11 @@ header {
 h1 {
     width:auto;
     height: 30%;
-    margin-top: 5px;
+    margin-top: 2px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-style: italic;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color:#ff0035;
     text-align: center;
     }
@@ -30,6 +30,7 @@ nav {
     width:auto;
     height: 70%;
     align-content:center ;
+    padding-top:8px;
 }
 
 nav ul{
@@ -42,13 +43,13 @@ nav ul li {
     display: inline-block;
     text-align: center;
     width: 90px;
-    height: 32px;
-    margin-top: 4px;
-    margin-right: 4px;
+    height: 30px;
+    margin-bottom: 2px;
+    margin-right: 2px;
     border: 1px solid red;
     border-top-left-radius:50% ;
     border-bottom-right-radius: 50%; 
-    padding: 4px;
+    padding: 2px;
     font-weight: bold;
     background-color: rgb(255, 189, 222);
 }
@@ -82,7 +83,7 @@ nav ul li a:hover {
                     background-size: cover;
 }
 
-section .flex-container {
+.flex-container {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -90,13 +91,13 @@ section .flex-container {
 }
 
 
-section .flex-container div {
+.flex-container div {
   position:sticky;
-  top: 140px;
+  top: 126px;
   background-color:rgba(255, 0, 0, 0.2);
   width: 100%;
-  height:91px;
-  margin-bottom: 10px;
+  height:68px;
+  margin-bottom: 6px;
   text-align: left;
   border-top: 1px solid red;
   border-left: 1px solid red;
@@ -109,11 +110,10 @@ section .flex-container div {
   background-color:rgba(255, 0, 0, 0.2);
   background-image:url('../images/hiit/hiit1.jpg');
   background-clip: content-box;
-  background-origin:;
   background-size: contain;
   background-repeat: no-repeat;
   background-position:right ;
-  margin-top: 140px;  
+  margin-top: 126px;  
 }
 
 #zumba {
@@ -163,69 +163,57 @@ section .flex-container div {
 }
 
 
- /*  H3 section elements */
+ /* section elements */
 
-#hiit  h3 {
-    color: rgb(133, 4, 253);
-    margin-top: 10px;
-    margin-left: 20px;
+section a {
+
+    color:red;
+    background-color:rgba(0, 38, 255, 0.836);
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-weight: bolder;    
+    font-weight: bold; 
+    padding-left: 12px ; 
+    padding-right: 12px ;
+    border-style: 1px solid red; 
+    border-radius: 20px;	
 }
 
-#zumba  h3 {
-    color: rgb(133, 4, 253);
-    margin-top: 40px;
-    margin-left: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: bolder;    
-}
-
-#yoga  h3 {
-    color: rgb(133, 4, 253);
-    margin-top: 10px;
-    margin-left: 120px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: bolder;    
-}
-
-#nutri  h3 {
-    color: rgb(133, 4, 253);
-    margin-top: 40px;
-    margin-left: 200px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: bolder;    
-}
-
-#vip  h3 {
-    color: rgb(133, 4, 253);
-    margin-top: 40px;
-    margin-left: 120px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: bolder;    
-}
-
-#stretch  h3 {
-    color: rgb(133, 4, 253);
-    margin-top: 10px;
-    margin-left: 210px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: bolder;    
-}
 section a:hover {
-   text-decoration: none;
-   color:rgb(255, 0, 10);
-   background-color: rgba(8, 4, 243, 0.623);
-   font-style: italic;
+   text-decoration:none ;
+   color:rgb(253, 45, 45);
+   background-color: rgb(120, 0, 200);
+    
 }
 
+#hiit h3 a {
+    margin-top: 5px;
+    margin-left: 10px;	
+}
 
+#zumba h3 a {
+   margin-top: 45px;
+    margin-left: 110px;	
+}
+
+#yoga  h3 a {
+   margin-top:5px;
+    margin-left: 200px;	
+}
+
+#vip  h3 a {
+    margin-top: 4px;
+    margin-left: 280px;	
+}
+
+#stretch  h3 a {
+   margin-top: 4px;
+    margin-left: 440px;	
+}
+
+#nutri h3 a {
+    margin-top: 5px;
+    margin-left: 540px;	
+}
 
 pre {
     background-color:rgba(209, 25, 255, 0.2);
