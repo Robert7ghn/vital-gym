@@ -125,7 +125,6 @@ nav ul li a:hover {
   background-size: contain;
 }
 
-
 #yoga {
   background-color:rgba(255, 0, 0, 0.2);
   background-image:url('../images/yoga/yasana.jpg');
@@ -180,39 +179,39 @@ section a {
 
 section a:hover {
    text-decoration:none ;
-   color:rgb(253, 45, 45);
-   background-color: rgb(120, 0, 200);
-    
+   color:rgba(0, 38, 255, 0.836);
+   background-color:tomato;
+  
 }
 
 #hiit h3 a {
-    margin-top: 5px;
-    margin-left: 10px;	
+    margin-top: 25px;
+    margin-left: 80px;	
 }
 
 #zumba h3 a {
-   margin-top: 45px;
-    margin-left: 110px;	
+    margin-top: 25px;
+    margin-left: 80px;		
 }
 
 #yoga  h3 a {
-   margin-top:5px;
-    margin-left: 200px;	
+   margin-top: 25px;
+    margin-left: 80px;	
 }
 
 #vip  h3 a {
-    margin-top: 4px;
-    margin-left: 280px;	
+    margin-top: 25px;
+    margin-left: 80px;	
 }
 
 #stretch  h3 a {
-   margin-top: 4px;
-    margin-left: 440px;	
+   margin-top: 25px;
+    margin-left: 80px;	
 }
 
 #nutri h3 a {
-    margin-top: 5px;
-    margin-left: 540px;	
+    margin-top: 25px;
+    margin-left: 80px;		
 }
 
 pre {
