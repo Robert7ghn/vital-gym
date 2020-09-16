@@ -118,7 +118,7 @@ nav ul li a:hover {
 
 #zumba {
   background-color:rgba(255, 0, 0, 0.2);
-  background-image:url('../images/zumba/zumba1.jpg');
+  background-image:url('../images/zumba/zclas.jpg');
   background-repeat: no-repeat;
   background-attachment:scroll;
   background-position:right ;
@@ -127,7 +127,7 @@ nav ul li a:hover {
 
 #yoga {
   background-color:rgba(255, 0, 0, 0.2);
-  background-image:url('../images/yoga/yasana.jpg');
+  background-image:url('../images/yoga/yposture1.jpg');
   background-repeat: no-repeat;
   background-attachment:scroll;
   background-position:right ;
@@ -136,7 +136,7 @@ nav ul li a:hover {
 
 #nutri {
   background-color:rgba(255, 0, 0, 0.2);
-  background-image:url('../images/nutrition/apetit.jpg');
+  background-image:url('../images/nutrition/breakfast.jpg');
   background-repeat: no-repeat;
   background-attachment:scroll;
   background-position:right ;
@@ -145,7 +145,7 @@ nav ul li a:hover {
 
 #vip {
   background-color:rgba(255, 0, 0, 0.2); 
-  background-image:url('../images/vip/pt3.jpg');
+  background-image:url('../images/vip/pt-n.jpg');
   background-repeat: no-repeat;
   background-attachment:scroll;
   background-position:right ;
@@ -159,6 +159,7 @@ nav ul li a:hover {
   background-attachment:scroll;
   background-position:right ;
   background-size: contain;
+  border: 1px solid red;
 }
 
 
